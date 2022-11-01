@@ -1,0 +1,132 @@
+[
+	{
+		"titulo": "La caja 507",
+		"fecha": "2002",
+		"genero": "Thriller",
+		"duracion": "104",
+		"storyline": "Modesto, un hombre honrado y trabajador, dirige una sucursal bancaria en la Costa del Sol. Un día, unos atracadores entran en el banco, revientan las cajas de seguridad y lo dejan atrapado dentro. Casualmente, al mirar el contenido de la caja 507, descubre que la muerte de su hija, ocurrida hace algunos años, no fue accidental. Del contenido de esa caja depende también la vida y la seguridad de Rafael, un ex-policía corrupto y sin escrúpulos, que tratará de recuperar esos documentos como sea.",
+		"director":"Enrique Urbizu",
+        "reparto": [
+			"Antonio Resines",
+			"Jose Coronado"
+		],
+		"posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "El año del descubrimiento",
+        "fecha": "2020",
+        "genero": "Documental",
+        "duracion": "200",
+        "storyline": "En 1992 suceden en España dos eventos fundamentales: los Juegos Olímpicos de Barcelona y la Exposición Universal de Sevilla, vinculada a la celebración del V Centenario del Descubrimiento de América. Diez años después de la subida al poder del PSOE de Felipe González, España aparece ante la comunidad internacional como un país efervescente, moderno y civilizado. Una futura potencia económica mundial. Sin embargo, en Cartagena, los disturbios y protestas por el cierre de fábricas y el desmantelamiento industrial adquieren una violencia creciente hasta acabar con el incendio del parlamento regional con cócteles molotov.",
+        "director":"Luis López Carrasco",
+        "reparto": [
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "Mi vida sin mí",
+        "fecha": "2003",
+        "genero": "Drama",
+        "duracion": "106",
+        "storyline": "Ann tiene 23 años, dos hijas, un marido que pasa más tiempo en paro que trabajando, una madre que odia al mundo, un padre que lleva 10 años en la cárcel, un trabajo como limpiadora nocturna en una universidad a la que nunca podrá asistir durante el día... Vive en una caravana en el jardín de su madre, en las afueras de Vancouver. Esta existencia gris cambia completamente tras un reconocimiento médico. Desde ese día, paradójicamente, Ann descubre un inusual placer de vivir, guiada por un impulso vital: elaborar una lista de cosas que quiere hacer antes de morir.",
+        "director":"Isabel Coixet",
+        "reparto": [
+            "Sarah Polley",
+            "Scott Speedman"
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "Historias del Kronen",
+        "fecha": "1995",
+        "genero": "Drama",
+        "duracion": "91",
+        "storyline": "Sexo, drogas y peligrosos desafíos a la muerte en las calles de Madrid. 'Kronen' es la cervecería donde se reúne un grupo de amigos con pocas expectativas vitales, jóvenes que aprovechan la noche para vivir sus aventuras de la forma más excitante posible. Cualquier placer, ya sea la velocidad, la música o las drogas les sirve para exprimir las noches de verano intentando pasárselo bien hasta el alba. El líder natural es Carlos, un joven tan seductor como amoral que de forma constante reta las convenciones hasta llevar a todos al límite",
+        "director":"Montxo Armendáriz",
+        "reparto": [
+            "Juan Diego Botto",
+            "Jordi Mollà"
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "Comanchería",
+        "fecha": "2016",
+        "genero": "Western",
+        "duracion": "102",
+        "storyline": "Toby (Chris Pine), un joven padre divorciado, y su impulsivo hermano Tanner (Ben Foster), un expresidiario recién salido de la cárcel, se dirigen al Oeste de Texas para realizar una serie de robos en unas pocas sucursales bancarias. El objetivo de Toby es intentar poder conseguir el dinero suficiente como para poder salvar la granja familiar, que está en peligro. Nada más cometer el primer robo, un veterano Ranger de Texas (Jeff Bridges) y su compañero irán tras la pista de los hermanos.",
+        "director":"David Mackenzie",
+        "reparto": [
+            "Jeff Bridges",
+            "Chris Pine"
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "Tropic Thunder, ¡una guerra muy perra!",
+        "fecha": "2008",
+        "genero": "Comedia",
+        "duracion": "107",
+        "storyline": "En la selva del sureste de Asia, se rueda una superproducción sobre la guerra de Vietnam en la que intervienen varias estrellas: Kirk Lazarus (Robert Downey Jr.), un actor que ha ganado tres Oscar; Jeff Portnoy (Jack Black), estrella de una popular y grosera saga de películas; Alpa Chino (Brandon T. Jackson) estrella del hip-hop metido a actor, y el novato Kevin Sandusky (Jay Baruchel). A medida que avanza el rodaje, las cosas van de mal en peor, sobre todo para Damien (Steve Coogan), el director de la cinta. Llega un momento en que todo el equipo se pierde en la jungla y tiene que librar una auténtica batalla para sobrevivir.",
+        "director":"Ben Stiller",
+        "reparto": [
+            "Ben Stiller",
+            "Robert Downey Jr."
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "Wind River",
+        "fecha": "2017",
+        "genero": "Thriller",
+        "duracion": "110",
+        "storyline": "Una joven agente del FBI se alía con un veterano rastreador local para investigar el asesinato de una joven ocurrido en una reserva de nativos americanos...",
+        "director":"Taylor Sheridan",
+        "reparto": [
+            "Jeremy Renner",
+            "Elizabeth Olsen"
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "La flaqueza del bolchevique",
+        "fecha": "2003",
+        "genero": "Drama",
+        "duracion": "95",
+        "storyline": "Madrid, otoño del 2002. Pablo López es un tipo normal. Tiene treinta y tantos años, trabaja en un banco de inversiones y está harto de todo. Un lunes, a las 9 de la mañana, en un atasco en pleno centro de la capital, su coche se empotra contra el descapotable Sonsoles, la chica más excéntrica de Madrid, que lo mete en un lío monumental con la policía y el seguro. Así que Pablo, para hacer más llevadero un otoño tan tedioso, decide dedicarse a putearla. Pero el día que conoce a María, la hermana de Sonsoles, su vida da un giro espectacular. Él, que nunca pensó que su existencia pudiera volver a tener sentido, ahora siente que no debe enamorarse de una chica de quince años",
+        "director":"Manuel Martín Cuenca",
+        "reparto": [
+            "Luis Tosar",
+            "María Valverde"
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+    {
+        "titulo": "Zodiac",
+        "fecha": "2007",
+        "genero": "Thriller",
+        "duracion": "158",
+        "storyline": "Thriller sobre el famoso 'Asesino del Zodiaco', un asesino en serie que, entre 1966 y 1978, mató a numerosas personas en San Francisco, al tiempo que enviaba a los medios de comunicación cartas con pistas. La acción se centra en las largas pesquisas de dos detectives que intentaron darle caza y en las investigaciones de dos periodistas que trataron de averiguar su identidad.",
+        "director":"David Fincher",
+        "reparto": [
+            "Jake Gyllenhaal",
+            "Robert Downey Jr.",
+            "Mark Ruffalo"
+        ],
+        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	},
+	{
+		"titulo": "Un profeta",
+		"fecha": "2009",
+		"genero": "Crimen",
+		"duracion": "150",
+		"storyline": "El joven Malik El Djebena (Tahar Rahim), un francés de origen árabe, ingresa en prisión para cumplir una pena de seis años. Aunque al principio la vida en la cárcel le resulta muy dura porque está completamente solo, se adapta rápidamente y, gracias a su carisma, se gana poco a poco la simpatía de los miembros de la mafia corsa, que tienen sobornados a los guardias y controlan todo lo que pasa en prisión.",
+		"director":"Jacques Audiard",
+        "reparto": [
+			"Tahar Rahim",
+			"Niels Arestrup",
+			"Adel Bencherif"
+		],
+		"posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg"
+	}
+]
