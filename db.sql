@@ -10,21 +10,21 @@ create table if not exists actores(
 id int auto_increment primary key,
 nombre varchar(100) not null
 );
--- 2.1.2 .- Tabla peliculas
+-- 2.1.2.- Tabla directores
+create table if not exists directores(
+id int auto_increment primary key,
+nombre varchar(200) not null
+);
+-- 2.1.3 .- Tabla peliculas
 create table if not exists peliculas(
 id int auto_increment primary key,
 titulo varchar(200) not null,
 fecha int not null,
 genero varchar(200) not null,
 duracion int not null,
-poster varchar(200) not null
-);
--- 2.1.3.- Tabla directores
-create table if not exists directores(
-id int auto_increment primary key,
-nombre varchar(200) not null,
-peli_id int,
-constraint fk_pelicu_id foreign key(peli_id) references peliculas(id) on update
+poster varchar(200) not null,
+director_id int,
+constraint fk_director_id foreign key(director_id) references directores(id) on update
 cascade on delete cascade
 );
 -- 2.1.4.- Tabla usuarios
@@ -33,7 +33,6 @@ correo varchar(200) primary key,
 nombre varchar(200) not null,
 contraseña varchar(200) not null
 );
-
 -- 2.1.5 Tabla reparto
 create table if not exists reparto(
 peli_id int,
