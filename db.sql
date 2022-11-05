@@ -31,7 +31,8 @@ cascade on delete cascade
 create table if not exists usuarios(
 correo varchar(200) primary key,
 nombre varchar(200) not null,
-contraseña varchar(200) not null
+contraseña varchar(200) not null,
+rol int not null
 );
 -- 2.1.5 Tabla reparto
 create table if not exists reparto(
