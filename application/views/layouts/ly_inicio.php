@@ -21,7 +21,7 @@
 					<input class="form-control me-2" type="search" placeholder="Introduzca película" aria-label="Buscar">
 					<button class="btn btn-outline-light" type="submit">Buscar</button>
 				</form>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse col-md-6" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item"><a class="nav-link" href='/queVEO/nuevo'>Login</a></li>
                         <li class="nav-item"><a class="nav-link" href="/blog/admin/registro">Nuevo Usuario</a></li>

@@ -3,7 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 #LOGIN
 $route['nuevo'] = 'NuevoUsuarioController';
 
-
+#ADMIN
+$route['admin'] = 'AdminController';
 
 $route['default_controller'] = 'InicioController';
 $route['404_override'] = '';
