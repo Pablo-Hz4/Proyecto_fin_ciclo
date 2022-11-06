@@ -1,15 +1,19 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 #LOGIN
-$route['nuevo'] = 'NuevoUsuarioController';
+$route['login'] = 'LoginController';
+$route['registro'] = 'LoginController/registro';
+
 
 #ADMIN
 $route['admin'] = 'AdminController';
 
-
+#NUEVO USUARIO
+$route['nuevo'] = 'NuevoUsuarioController';
 $route['datos_usuario'] = 'NuevoUsuarioController/add_usuario';
 
-
+#USUARIO REGISTRADO
+$route['usuario'] = 'UserController';
 
 
 

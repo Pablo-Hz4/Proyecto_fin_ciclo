@@ -35,7 +35,7 @@ public function add_usuario(){
 		//En UsuariosModel creamos la función check. Esta función nos devuelve todos los usuarios con el email introducido.
 	if(!$this->UsuariosModel->check($datos)){ //Si no devuelve ninguno es que no hay nadie registrado con ese email
 		$this->UsuariosModel->insert($datos);  // Por lo que podemos darlo de alta
-		header("location:/queveo/admin");  //indicamos a que ruta queremos que nos redireccione.
+		header("location:/queveo/login");  //indicamos a que ruta queremos que nos redireccione.
 	}
 	else{  //Si por el contrario nos devuelve algún registro es que ya existe un usuario con ese mail, por lo que no es válido para registrarse
 		$error = array ( 

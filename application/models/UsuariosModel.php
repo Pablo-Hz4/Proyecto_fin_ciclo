@@ -61,7 +61,7 @@ class UsuariosModel extends CI_Model
 
   # Método para validar el email y contraseña que nos han pasado desde el formulario
   public function login( $datos){
-    $sql = "Select * From usuarios Where email = '".$datos['email']."' And password = '".$datos['password']."'";
+    $sql = "Select * From usuarios Where email = '".$datos['email']."' And pass = '".$datos['pass']."'";
     return ( $this->ExecuteArrayResults( $sql ));
   }
 

@@ -23,7 +23,7 @@
 				</form>
                 <div class="collapse navbar-collapse col-md-6" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link" href='/queveo/nuevo'>Login</a></li>
+						<li class="nav-item"><a class="nav-link" href='/queveo/login'>Login</a></li>
                         <li class="nav-item"><a class="nav-link" href="/queveo/nuevo">Nuevo Usuario</a></li>
                     </ul>
                 </div>
