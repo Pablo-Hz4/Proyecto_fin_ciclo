@@ -9,7 +9,7 @@
 	</div>
 
 	<div class="container ">
-		<form class="" action="" role="form" action="/add_autor" method="post">
+		<form role="form" action="/queveo/datos_usuario" method="post">
 			<div class="row mb-3">
 				<label for="usuario" class="col-1 col-form-label">Usuario</label>
 				<div class="col-5 text-center">

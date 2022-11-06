@@ -1,14 +1,52 @@
 $("document").ready(function(){
 
-    $("#enviar").click(function(){
+    $("#enviar").click(function(event){
+		event.preventDefault();
 		let usuario= $("#usuario").val();
 		let email= $("#email").val();
 		let pass= $("#pass").val();
+		let rol="1";
 
 		if(!validarUsuario(usuario)){alert ("El usuario no es valido")};
 		if(!validarMail(email)){alert ("El correo no es válido")};
 
+		//if(validarUsuario(usuario) && validarMail(email)){altaUsuario(usuario, email, pass)};
+
+
+		$.ajax({
+            url: "NuevoUsuarioController/add_usuario",
+            encoding: "UTF-8",
+            type: "POST",
+            data: {email: email, usuario: usuario, pass: pass, rol:rol},
+
+            complete: function () {
+				// var result = JSON.parse(result.responseText);
+				 alert("Registro ok");
+            },
+            error: function () {
+                alert('Se produjo un error');
+            }
+        });
+
     })
+
+
+	function altaUsuario(usuario, email, pass, event){
+		event.preventDefault();
+		$.ajax({
+            url: "<?php echo base_url(); ?>" + "/NuevoUsuarioController/add_usuario",
+            encoding: "UTF-8",
+            type: "POST",
+            data: { usuario: usuario, email: email, pass: pass },
+
+            complete: function (result) {
+                alert('todo bien');
+            },
+            error: function () {
+                alert('Se produjo un error');
+            }
+        });
+	}
 
 	function validarUsuario(usuario){
 		let re = new RegExp ("^[a-zA-Z]+[ a-zA-Z]*$");      //Caracteres de la a a la z minúscula y mayúsucula y opción de poner nombre compuesto

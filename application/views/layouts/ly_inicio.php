@@ -16,15 +16,15 @@
         <!-- Menú superior-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand col-md-4" href="/queVEO">QueVEO</a>
+                <a class="navbar-brand col-md-4" href="/queveo">QueVEO</a>
 				<form class="d-flex col-md-4" role="search">
 					<input class="form-control me-2" type="search" placeholder="Introduzca película" aria-label="Buscar">
 					<button class="btn btn-outline-light" type="submit">Buscar</button>
 				</form>
                 <div class="collapse navbar-collapse col-md-6" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link" href='/queVEO/nuevo'>Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog/admin/registro">Nuevo Usuario</a></li>
+						<li class="nav-item"><a class="nav-link" href='/queveo/nuevo'>Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/queveo/nuevo">Nuevo Usuario</a></li>
                     </ul>
                 </div>
             </div>
