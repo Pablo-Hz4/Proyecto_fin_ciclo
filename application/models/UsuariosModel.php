@@ -46,7 +46,8 @@ class UsuariosModel extends CI_Model
 
 
 
-  public function insert( $tabla, $datos){
+  public function insert($datos){
+		$tabla="usuarios";
     $this->db->insert( $tabla, $datos);
   }
 
@@ -60,9 +61,18 @@ class UsuariosModel extends CI_Model
 
   # Método para validar el email y contraseña que nos han pasado desde el formulario
   public function login( $datos){
-    $sql = "Select * From authors Where email = '".$datos['email']."' And password = '".$datos['password']."'";
+    $sql = "Select * From usuarios Where email = '".$datos['email']."' And password = '".$datos['password']."'";
     return ( $this->ExecuteArrayResults( $sql ));
   }
+
+# Método para validar si ya hay un usuario registrado con ese email
+	public function check($datos){
+    $sql = "Select * From usuarios Where email = '".$datos['email']."'";
+    return ( $this->ExecuteArrayResults( $sql ));
+  }
+
+
+
 
   public function ListPosts(){
     $sql = "select * from posts order by id desc";

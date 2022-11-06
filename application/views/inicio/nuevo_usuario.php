@@ -1,6 +1,14 @@
 
 <!-- Page Content -->
+<?php
 
+        # Si existe la variable error que envia el controlador NuevoUsuarioController/add_usuario mostraremos el error.
+        if ( isset( $error))
+        {
+          echo "<div class='alert alert-danger text-center'>$error</div>";
+        }
+
+?>
 <div class="container">
 	<div class="row mb-3">
 		<div class="col-lg-12 text-lett">
@@ -9,11 +17,11 @@
 	</div>
 
 	<div class="container ">
-		<form role="form" action="/queveo/datos_usuario" method="post">
+		<form role="form" action="/queveo/datos_usuario" method="post">  <!-- En el action indicamos que vaya a la ruta "datos_usuario". Esa ruta nos lleva al controlador NuevoUsuarioController y al método add_usuario --> 
 			<div class="row mb-3">
 				<label for="usuario" class="col-1 col-form-label">Usuario</label>
 				<div class="col-5 text-center">
-					<input type="text" class="form-control" id="usuario" name="display_name" placeholder="Introduzca usuario">
+					<input type="text" class="form-control" id="usuario" name="usuario" placeholder="Introduzca usuario">
 				</div>
           </div>
 

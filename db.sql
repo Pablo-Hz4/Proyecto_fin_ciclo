@@ -29,10 +29,10 @@ cascade on delete cascade
 );
 -- 2.1.4.- Tabla usuarios
 create table if not exists usuarios(
-correo varchar(200) primary key,
-nombre varchar(200) not null,
-contraseña varchar(200) not null,
-rol int not null
+usuario varchar(200) not null,
+email varchar(200) primary key,
+pass varchar(200) not null,
+rol int DEFAULT 2
 );
 -- 2.1.5 Tabla reparto
 create table if not exists reparto(
@@ -53,6 +53,6 @@ usuarios_correo varchar(200),
 constraint pk_favoritos primary key(peli_id, usuarios_correo),
 constraint fk_peli_id foreign key(peli_id) references peliculas(id) on update
 cascade on delete cascade,
-constraint fk_usu_correo foreign key(usuarios_correo) references usuarios(correo) on update
+constraint fk_usu_correo foreign key(usuarios_correo) references usuarios(email) on update
 cascade on delete cascade
 );

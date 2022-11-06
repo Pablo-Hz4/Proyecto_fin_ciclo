@@ -1,7 +1,7 @@
 $("document").ready(function(){
 
-    $("#enviar").click(function(event){
-		event.preventDefault();
+    $("#enviar").click(function(){
+		
 		let usuario= $("#usuario").val();
 		let email= $("#email").val();
 		let pass= $("#pass").val();
@@ -13,40 +13,24 @@ $("document").ready(function(){
 		//if(validarUsuario(usuario) && validarMail(email)){altaUsuario(usuario, email, pass)};
 
 
-		$.ajax({
-            url: "NuevoUsuarioController/add_usuario",
-            encoding: "UTF-8",
-            type: "POST",
-            data: {email: email, usuario: usuario, pass: pass, rol:rol},
+		// $.ajax({
+        //     url: "NuevoUsuarioController/add_usuario",
+        //     encoding: "UTF-8",
+        //     type: "POST",
+        //     data: {usuario: usuario, email: email, pass: pass},
 
-            complete: function () {
-				// var result = JSON.parse(result.responseText);
-				 alert("Registro ok");
-            },
-            error: function () {
-                alert('Se produjo un error');
-            }
-        });
+        //     success: function () {
+		// 		//window.location.replace("admin/index_admin");  // para hacer redirecciones desde js
+        //     },
+        //     error: function () {
+        //         alert('Se produjo un error');
+        //     }
+        // });
+		
 
     })
 
 
-	function altaUsuario(usuario, email, pass, event){
-		event.preventDefault();
-		$.ajax({
-            url: "<?php echo base_url(); ?>" + "/NuevoUsuarioController/add_usuario",
-            encoding: "UTF-8",
-            type: "POST",
-            data: { usuario: usuario, email: email, pass: pass },
-
-            complete: function (result) {
-                alert('todo bien');
-            },
-            error: function () {
-                alert('Se produjo un error');
-            }
-        });
-	}
 
 	function validarUsuario(usuario){
 		let re = new RegExp ("^[a-zA-Z]+[ a-zA-Z]*$");      //Caracteres de la a a la z minúscula y mayúsucula y opción de poner nombre compuesto
