@@ -9,6 +9,7 @@ class UsuariosModel extends CI_Model
   {
 
     parent::__construct();
+		
 
     # Cargamos la conexión a la base de datos
     $this->db = $this->load->database('proyecto', true);

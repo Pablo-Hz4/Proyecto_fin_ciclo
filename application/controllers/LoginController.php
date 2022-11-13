@@ -1,11 +1,12 @@
 <?php 
-        
+
 defined('BASEPATH') OR exit('No direct script access allowed');
         
 class LoginController extends CI_Controller {
 
 	function __construct(){				// Creamos la conexión al modelo
 		parent::__construct();
+		
 		$this->load->model( 'UsuariosModel', 'UsuariosModel');
 	  }
 	
@@ -45,15 +46,33 @@ public function registro()
 		);
 	
 		$this->layouts->view($vista);  // vamos al archivos layouts.php (lo hemos cargado en el autoload) y ejecutamos la función view, a la que le pasaos la variable $vista  
-	
-	
-	
 	}  
-	elseif($user[0]["rol"]==2) {header("location: /queveo/usuario");} // si el usuario y contraseña son correctos, y el rol es 2 nos envía a la ruta "usuario"
-	else{header("location: /queveo/admin");} 
+	elseif($user[0]["rol"]==2){						// si el usuario y contraseña son correctos, y el rol es 2 nos envía a la ruta "usuario"
+		$_SESSION['usuario']=$user[0]["usuario"];
+		$_SESSION['email']=$user[0]["email"];
+		$_SESSION['rol']='user';
+		header("location: /queveo/usuario");
+	} 
+	else{		// Si es admin
+		$_SESSION['rol']='admin';
+		$_SESSION['usuario']=$user[0]["usuario"];
+		header("location: /queveo/admin");
+	} 
   }
 
+public function deslogar(){
+	session_destroy();
+	$datos=array();
+		$vista=array(
+			'vista'=>'inicio/index_inicio.php',  //nombre de la vista
+			'params'=>$datos,      // datos que le pasamos
+			'layout'=>'ly_inicio.php', // nombre del layout
+			'titulo'=>'Prueba de controlador' //título layout
+		);
 
+		$this->layouts->view($vista);  // vamos al archivos layouts.php (lo hemos cargado en el autoload) y ejecutamos la función view, a la que le pasaos la variable $vista
+	
+}
 
 
 
