@@ -20,7 +20,7 @@ public function index(){
 public function inicio_usuario(){
 	$datos=array();
 	$vista=array(
-		'vista'=>'usuario/inicio_usuario.php',  //nombre de la vista
+		'vista'=>'inicio/index_inicio.php',  //nombre de la vista
 		'params'=>$datos,      // datos que le pasamos
 		'layout'=>'ly_usuario.php', // nombre del layout
 		'titulo'=>'Prueba de controlador' //título layout

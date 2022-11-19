@@ -25,7 +25,7 @@
 						<li class="nav-item"><a class="nav-link"><?php echo $_SESSION['usuario']?></a></li>
 						<li class="nav-item"><a class="nav-link" href="/queveo/logout">Logout</a></li>
 						<li class="nav-item"><a class="nav-link" href="/queveo/admin/nueva">Añadir nueva</a></li>
-						<li class="nav-item"><a class="nav-link" href="/blog/admin/nueva">Cargar base de datos</a></li>
+						<li class="nav-item"><a class="nav-link" href="/queveo/admin/json">Cargar base de datos</a></li>
                     </ul>
                 </div>
             </div>

@@ -8,6 +8,7 @@ $route['registro'] = 'LoginController/registro';
 #ADMIN
 $route['admin'] = 'AdminController';
 $route['admin/nueva'] = 'AdminController/add_peli';
+$route['admin/json'] = 'AdminController/json';
 
 #NUEVO USUARIO
 $route['nuevo'] = 'NuevoUsuarioController';
