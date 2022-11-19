@@ -6,6 +6,7 @@ class InicioController extends CI_Controller {
 
 	public function index()
 	{
+		session_destroy();
 		$datos=array();
 		$vista=array(
 			'vista'=>'inicio/index_inicio.php',  //nombre de la vista
