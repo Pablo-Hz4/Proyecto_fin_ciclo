@@ -13,6 +13,7 @@
         <link rel="icon" type="image/x-icon" href="/bootstrap/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/bootstrap/css/styles.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
 	
     <body>

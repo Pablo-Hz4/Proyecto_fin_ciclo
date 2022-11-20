@@ -16,6 +16,10 @@ $pelis = json_decode($result, true);
 
 <div class="container">
 <div class="row">
+	<div class="p-2 d-grid gap-2 d-md-flex justify-content-md-end">
+		<button type="button" class="btn btn-primary" id="cargar">Cargar</button>
+		
+	</div>
 	<?php 
 		foreach ($pelis as $peli) { ?>
 			
@@ -45,3 +49,4 @@ $pelis = json_decode($result, true);
 	</div>
 </div>
 
+<script type="text/javascript" src="/queveo/bootstrap/js/cargarJson.js"></script>
