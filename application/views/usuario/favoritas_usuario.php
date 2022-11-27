@@ -1,15 +1,14 @@
-<?php
-//$lon=sizeof($pelis);
-// $result = file_get_contents("pelis.json");
-// $pelis = json_decode($result, true);
-?>
-
-
-
 <div class="container">
             <div class="text-center mt-5">
                 <h1>QueVEO</h1>
-                <p class="lead">Nuestras recomendadas</p>
+                <p class="lead">Hola <?php echo $_SESSION['usuario']?></p>
+				<p>Tus favoritas</p>
+                
+            </div>
+</div>
+
+<div class="container">
+            <div class="text-center mt-5">
                 <div class="row">
 				<?php 
 					foreach ($contenido as $peli) { ?>

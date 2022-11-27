@@ -4,10 +4,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         
 class InicioController extends CI_Controller {
 
+	function __construct()
+  {
+    parent::__construct();
+
+    $this->load->model( 'PeliculasModel', 'PeliculasModel');
+  }
+
+
 	public function index()
 	{
 		session_destroy();
-		$datos=array();
+
+		$contenido = $this->PeliculasModel->recomendadas();
+		$datos = array('contenido' => $contenido);
+		
 		$vista=array(
 			'vista'=>'inicio/index_inicio.php',  //nombre de la vista
 			'params'=>$datos,      // datos que le pasamos

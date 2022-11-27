@@ -10,6 +10,8 @@
         <link rel="icon" type="image/x-icon" href="/bootstrap/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/bootstrap/css/styles.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     </head>
 	
     <body>
@@ -24,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item"><a class="nav-link" href="/queveo/usuario"><?php echo $_SESSION['usuario']?></a></li>
-						<li class="nav-item"><a class="nav-link" href="/queveo/logout">Logout</a></li>
+						<li class="nav-item"><a class="nav-link" href="/queveo/">Logout</a></li>
                     </ul>
                 </div>
             </div>

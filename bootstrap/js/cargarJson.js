@@ -1,7 +1,7 @@
 $("document").ready(function(){
 
     $("#cargar").click(function(){
-		location.href = "/queveo/admin/cargarJson/";
+		  location.href = "/queveo/admin/cargarJson/";
 		
 
     })

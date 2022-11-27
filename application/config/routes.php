@@ -20,6 +20,10 @@ $route['usuario'] = 'UserController';
 $route['inicio_usuario'] = 'UserController/inicio_usuario';
 $route['logout'] = 'LoginController/deslogar';
 
+$route['peli/(:num)'] = 'PeliController';
+$route['anadirFav'] = 'PeliController/anadirFav';
+
+
 
 $route['default_controller'] = 'InicioController';
 $route['404_override'] = '';

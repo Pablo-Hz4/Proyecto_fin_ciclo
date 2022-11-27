@@ -69,35 +69,30 @@ class PeliculasModel extends CI_Model
 
 
 
-  public function ListPosts(){
-    $sql = "select * from posts order by id desc";
+  public function recomendadas(){
+    $sql = "select p.id, titulo, fecha, genero, duracion, poster, d.nombre as director, a.nombre as reparto
+						from proyecto.peliculas p
+						inner join proyecto.directores d on d.id = p.director_id
+						inner join proyecto.reparto r on r.peli_id = p.id
+						inner join proyecto.actores a on a.id=r.actores_id
+						group by p.id";
     return ( $this->ExecuteArrayResults( $sql ));
   }
 
-
-	public function ListAuthors(){
-    $sql = "select * from authors order by display_name asc";
-    return ( $this->ExecuteArrayResults( $sql ));
-  }
-
-
-
-	public function ListOnePost( $post_id){
-		
+	public function getPeli( $id){
 		//$sql = "select * from posts where id = " . $post_id;
-    $sql = "select * from posts where id = ?";
-    $params = array( $post_id);
+    $sql = "select  p.id, titulo, fecha, genero, duracion, poster, d.nombre as director, a.nombre as reparto
+						from proyecto.peliculas p
+						inner join proyecto.directores d on d.id = p.director_id
+						inner join proyecto.reparto r on r.peli_id = p.id
+						inner join proyecto.actores a on a.id=r.actores_id
+						where p.id= ?
+						group by p.id";
+    $params = array( $id);
     return ( $this->ExecuteResultsParamsArray( $sql, $params));
   }
 
-	public function ListOneAuthor( $author_id)
-  {
-    //$sql = "select * from posts where id = " . $post_id;
-    $sql = "select * from authors where id = ?";
-    $params = array( $author_id);
-    return ( $this->ExecuteResultsParamsArray( $sql, $params ));
-  }
-
+	
 
 
 
