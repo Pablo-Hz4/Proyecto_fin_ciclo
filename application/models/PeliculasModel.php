@@ -47,9 +47,9 @@ class PeliculasModel extends CI_Model
 
 
 
-  public function insert($titulo, $fecha, $genero, $duracion, $poster, $director_id){
-		$sql = 'INSERT INTO peliculas (titulo, fecha, genero, duracion, poster, director_id) VALUES (?,?,?,?,?,?)';
-	 	$result = $this->db->query($sql, array($titulo, $fecha, $genero, $duracion, $poster, $director_id));
+  public function insert($titulo, $fecha, $genero, $duracion, $poster, $director_id, $sinopsis){
+		$sql = 'INSERT INTO peliculas (titulo, fecha, genero, duracion, poster, director_id, sinopsis) VALUES (?,?,?,?,?,?,?)';
+	 	$result = $this->db->query($sql, array($titulo, $fecha, $genero, $duracion, $poster, $director_id, $sinopsis));
    return $result;
   }
 
@@ -70,18 +70,14 @@ class PeliculasModel extends CI_Model
 
 
   public function recomendadas(){
-    $sql = "select p.id, titulo, fecha, genero, duracion, poster, d.nombre as director, a.nombre as reparto
-						from proyecto.peliculas p
-						inner join proyecto.directores d on d.id = p.director_id
-						inner join proyecto.reparto r on r.peli_id = p.id
-						inner join proyecto.actores a on a.id=r.actores_id
-						group by p.id";
+    $sql = "select id, titulo, poster
+						from proyecto.peliculas LIMIT 0,8";
     return ( $this->ExecuteArrayResults( $sql ));
   }
 
 	public function getPeli( $id){
 		//$sql = "select * from posts where id = " . $post_id;
-    $sql = "select  p.id, titulo, fecha, genero, duracion, poster, d.nombre as director, a.nombre as reparto
+    $sql = "select p.id, titulo, fecha, genero, duracion, poster, sinopsis, d.nombre as director, GROUP_CONCAT(DISTINCT a.nombre SEPARATOR ', ') as reparto
 						from proyecto.peliculas p
 						inner join proyecto.directores d on d.id = p.director_id
 						inner join proyecto.reparto r on r.peli_id = p.id
@@ -89,6 +85,19 @@ class PeliculasModel extends CI_Model
 						where p.id= ?
 						group by p.id";
     $params = array( $id);
+    return ( $this->ExecuteResultsParamsArray( $sql, $params));
+  }
+
+	public function getPeliByTitulo( $titulo){
+		//$sql = "select * from posts where id = " . $post_id;
+    $sql = "select p.id, titulo, fecha, genero, duracion, poster, sinopsis, d.nombre as director, GROUP_CONCAT(DISTINCT a.nombre SEPARATOR ', ') as reparto
+						from proyecto.peliculas p
+						inner join proyecto.directores d on d.id = p.director_id
+						inner join proyecto.reparto r on r.peli_id = p.id
+						inner join proyecto.actores a on a.id=r.actores_id
+						where p.titulo= ?
+						group by p.id";
+    $params = array( $titulo);
     return ( $this->ExecuteResultsParamsArray( $sql, $params));
   }
 

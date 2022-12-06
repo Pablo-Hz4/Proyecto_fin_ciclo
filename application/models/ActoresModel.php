@@ -32,7 +32,7 @@ class ActoresModel extends CI_Model
     $rows['data'] = $query->result_array();
     $query->free_result();
 
-    return ( $rows);
+    return ( $query->result_array());
 
   }
 
@@ -64,7 +64,7 @@ class ActoresModel extends CI_Model
 	public function getActorId($nombre){
     $sql = "select id from actores where nombre = ?";
 		$id=$this->ExecuteResultsParamsArray( $sql, $nombre );
-    return $id['data'][0]['id'];
+    return $id;
   }
 
 

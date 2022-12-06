@@ -10,6 +10,7 @@ $route['admin'] = 'AdminController';
 $route['admin/nueva'] = 'AdminController/add_peli';
 $route['admin/json'] = 'AdminController/json';
 $route['admin/cargarJson'] = 'CrudController/cargarJson';
+$route['admin/nueva_peli'] = 'CrudController/addPeliNueva';
 
 #NUEVO USUARIO
 $route['nuevo'] = 'NuevoUsuarioController';
@@ -22,6 +23,9 @@ $route['logout'] = 'LoginController/deslogar';
 
 $route['peli/(:num)'] = 'PeliController';
 $route['anadirFav'] = 'PeliController/anadirFav';
+
+$route['buscarPeli'] = 'PeliController/getPeliByTitutlo';
+
 
 
 

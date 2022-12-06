@@ -10,6 +10,8 @@
         <link rel="icon" type="image/x-icon" href="/bootstrap/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/bootstrap/css/styles.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		
     </head>
 	
     <body>
@@ -17,9 +19,9 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand col-md-4" href="/queveo">QueVEO</a>
-				<form class="d-flex col-md-4" role="search">
-					<input class="form-control me-2" type="search" placeholder="Introduzca película" aria-label="Buscar">
-					<button class="btn btn-outline-light" type="submit">Buscar</button>
+				<form class="d-flex col-md-4" role="form" action="/queveo/buscarPeli" method="post">
+					<input class="form-control me-2" type="search" placeholder="Introduzca película" aria-label="Buscar" name="titulo">
+					<button class="btn btn-outline-light" id="buscar" type="submit">Buscar</button>
 				</form>
                 <div class="collapse navbar-collapse col-md-6" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -33,9 +35,12 @@
         <?php 
 			echo $content_for_layout;
 		?>
+
+	
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+		<!-- Core theme JS-->
         <script src="/bootstrap/js/scripts.js"></script>
+		
     </body>
 </html>

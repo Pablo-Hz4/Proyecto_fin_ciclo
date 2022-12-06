@@ -32,7 +32,7 @@ class DirectoresModel extends CI_Model
     $rows['data'] = $query->result_array();
     $query->free_result();
 
-    return ( $rows);
+    return ( $query->result_array());
 
   }
 
@@ -65,31 +65,7 @@ class DirectoresModel extends CI_Model
   public function getDirectorId($nombre){
     $sql = "select id from directores where nombre = ?";
 		$id=$this->ExecuteResultsParamsArray( $sql, $nombre );
-    return $id['data'][0]['id'];
-  }
-
-
-	public function ListAuthors(){
-    $sql = "select * from authors order by display_name asc";
-    return ( $this->ExecuteArrayResults( $sql ));
-  }
-
-
-
-	public function ListOnePost( $post_id){
-		
-		//$sql = "select * from posts where id = " . $post_id;
-    $sql = "select * from posts where id = ?";
-    $params = array( $post_id);
-    return ( $this->ExecuteResultsParamsArray( $sql, $params));
-  }
-
-	public function ListOneAuthor( $author_id)
-  {
-    //$sql = "select * from posts where id = " . $post_id;
-    $sql = "select * from authors where id = ?";
-    $params = array( $author_id);
-    return ( $this->ExecuteResultsParamsArray( $sql, $params ));
+    return $id;
   }
 
 
