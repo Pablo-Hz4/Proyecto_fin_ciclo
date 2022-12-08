@@ -53,13 +53,6 @@ class PeliculasModel extends CI_Model
    return $result;
   }
 
-  public function update( $tabla, $datos, $where){
-    $this->db->update( $tabla, $datos, $where);
-  }
-
-  public function delete( $tabla, $where){
-    $this->db->delete( $tabla, $where);
-  }
 
   public function getPeliculaId($nombre){
     $sql = "select id from peliculas where titulo = ?";
@@ -76,7 +69,6 @@ class PeliculasModel extends CI_Model
   }
 
 	public function getPeli( $id){
-		//$sql = "select * from posts where id = " . $post_id;
     $sql = "select p.id, titulo, fecha, genero, duracion, poster, sinopsis, d.nombre as director, GROUP_CONCAT(DISTINCT a.nombre SEPARATOR ', ') as reparto
 						from proyecto.peliculas p
 						inner join proyecto.directores d on d.id = p.director_id

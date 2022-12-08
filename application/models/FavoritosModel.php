@@ -50,23 +50,16 @@ class FavoritosModel extends CI_Model
    	return $result;
   }
 
-  public function update( $tabla, $datos, $where){
-    $this->db->update( $tabla, $datos, $where);
-  }
 
-  public function delete( $tabla, $where){
-    $this->db->delete( $tabla, $where);
-  }
-
-	public function esFavorita($peli_id){
+	public function esFavorita($peli_id, $email){
 		//$sql = "select * from posts where id = " . $post_id;
-    $sql = "select * from favoritos where peli_id = ?";
-    return ( $this->ExecuteArrayResults( $sql, $peli_id));
+    $sql = "select * from favoritos where peli_id = ? AND usuarios_correo= ?";
+    return ( $this->ExecuteArrayResults( $sql, array($peli_id, $email)));
   }
 
 	public function getFavoritasByUser($email){
 		//$sql = "select * from posts where id = " . $post_id;
-    $sql = "select  p.id, titulo, fecha, genero, duracion, poster, d.nombre as director, a.nombre as reparto
+    $sql = "select  p.id, titulo, fecha, genero, duracion, poster, d.nombre as director, GROUP_CONCAT(DISTINCT a.nombre SEPARATOR ', ') as reparto
 						from proyecto.peliculas p
 						inner join proyecto.directores d on d.id = p.director_id
 						inner join proyecto.reparto r on r.peli_id = p.id

@@ -54,13 +54,6 @@ class DirectoresModel extends CI_Model
    return $result;
   }
 
-  public function update( $tabla, $datos, $where){
-    $this->db->update( $tabla, $datos, $where);
-  }
-
-  public function delete( $tabla, $where){
-    $this->db->delete( $tabla, $where);
-  }
 
   public function getDirectorId($nombre){
     $sql = "select id from directores where nombre = ?";

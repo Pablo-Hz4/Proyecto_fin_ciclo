@@ -17,8 +17,7 @@ public function index()
 {
 	$contenido = $this->PeliculasModel->getPeli($this->uri->segment(2));
 	
-	if(empty($contenido)){							// Si el array está vació quiere decir que el usuario o la contraseña son incorrectos 
-		//header("location: /queveo/login");
+	if(empty($contenido)){							
 		$error = array ( 
 			'error' => "Película no encontrada"  
 		  );
@@ -38,7 +37,7 @@ public function index()
 
 
 	if(array_key_exists('rol', $_SESSION)){
-		$esFavorita = $this->FavoritosModel->esFavorita($this->uri->segment(2));
+		$esFavorita = $this->FavoritosModel->esFavorita($this->uri->segment(2), $_SESSION['email']);
 		if($esFavorita){
 			$contenido['data'][0]['fav']= true;
 		}else{
@@ -94,7 +93,7 @@ public function getPeliByTitutlo(){
 			
 		}else {											//si la película si que existe
 			if(array_key_exists('rol', $_SESSION)){
-				$esFavorita = $this->FavoritosModel->esFavorita($this->uri->segment(2));
+				$esFavorita = $this->FavoritosModel->esFavorita($this->uri->segment(2), $_SESSION['email']);
 				if($esFavorita){
 					$contenido['data'][0]['fav']= true;
 				}else{
