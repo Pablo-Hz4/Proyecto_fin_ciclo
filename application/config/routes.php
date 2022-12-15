@@ -19,7 +19,7 @@ $route['datos_usuario'] = 'NuevoUsuarioController/add_usuario';
 #USUARIO YA REGISTRADO
 $route['usuario'] = 'UserController';
 $route['inicio_usuario'] = 'UserController/inicio_usuario';
-$route['logout'] = 'LoginController/deslogar';
+$route['logout'] = 'InicioController';
 
 $route['peli/(:num)'] = 'PeliController';
 $route['anadirFav'] = 'PeliController/anadirFav';

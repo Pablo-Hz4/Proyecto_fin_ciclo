@@ -22,7 +22,7 @@ public function index()
 			'error' => "Película no encontrada"  
 		  );
 		$vista=array(  //Volvemos a cargar la vista mándalo el mensaje de error
-			'vista'=>'pelis/pelis.php',  //nombre de la vista
+			'vista'=>'pelis/peli_no_encontrada.php',  //nombre de la vista
 			'params'=>$error,      // datos que le pasamos
 			'layout'=>'ly_nuevo_usuario.php', // nombre del layout
 			'titulo'=>'Fallo login' //título layout
@@ -71,8 +71,6 @@ public function getPeliByTitutlo(){
 		$layout='ly_usuario.php';
 	}else{$layout='ly_inicio.php';}
 
-	
-
     	$titulo = $_POST['titulo'];
 		$contenido = $this->PeliculasModel->getPeliByTitulo($titulo);
 
@@ -82,7 +80,7 @@ public function getPeliByTitutlo(){
 			  );
 
 			  $vista=array(
-				'vista'=>'pelis/pelis.php',  //nombre de la vista
+				'vista'=>'pelis/peli_no_encontrada.php',  //nombre de la vista
 				'params'=>$contenido,      // datos que le pasamos
 				'layout'=>$layout, // nombre del layout
 				'titulo'=>'Prueba de controlador' //título layout

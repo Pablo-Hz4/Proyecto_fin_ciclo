@@ -14,6 +14,17 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/bootstrap/css/styles.css" rel="stylesheet" />
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<style>
+			html {height: 100%;}
+			body {
+				display: flex;
+				flex-direction: column;
+				min-height: 100%;
+			}
+			footer {
+				margin-top:auto;
+ 					 }
+		</style>
     </head>
 	
     <body>
@@ -40,4 +51,9 @@
         <!-- Core theme JS-->
         <script src="/bootstrap/js/scripts.js"></script>
     </body>
+	<footer class="bg-light text-center text-lg-start">
+  		<div class="text-center p-1" style="background-color: black;">
+    		<span class="text-light">© 2022 QueVEO - Pablo Hernández Uz</span>
+  		</div>
+	</footer>
 </html>
